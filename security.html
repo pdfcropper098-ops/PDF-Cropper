@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security - PDFCropper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .security-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        .security-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .security-header h1 {
+            font-size: 3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .security-header p {
+            color: #64748b;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .security-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .security-section h2 {
+            color: #2563eb;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .security-section h2 i {
+            margin-right: 0.75rem;
+        }
+        .security-section h3 {
+            color: #1f2937;
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .security-section p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .security-section ul {
+            color: #64748b;
+            line-height: 1.6;
+            padding-left: 1.5rem;
+        }
+        .security-section li {
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+        .security-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin: 2rem auto;
+            max-width: 300px;
+            font-weight: 600;
+        }
+        .security-badge i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .alert-box {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            color: #92400e;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        .alert-box h4 {
+            margin: 0 0 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .alert-box h4 i {
+            margin-right: 0.5rem;
+        }
+        .contact-info {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .contact-info h3 {
+            margin-bottom: 1rem;
+        }
+        .contact-info p {
+            margin-bottom: 1.5rem;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 25px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .contact-info a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        @media (max-width: 768px) {
+            .security-content {
+                padding: 100px 15px 60px;
+            }
+            .security-header h1 {
+                font-size: 2.5rem;
+            }
+            .security-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h2>PDFCropper</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="nav-link">Terms & Conditions</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="security-content">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="security-header">
+            <h1>Security & Privacy</h1>
+            <p>Your security and privacy are our top priorities. Learn how we protect your data and documents.</p>
+        </div>
+
+        <div class="security-badge">
+            <i class="fas fa-shield-alt"></i>
+            100% Local Processing - Zero Data Upload
+        </div>
+
+        <div class="security-section">
+            <h2><i class="fas fa-lock"></i>Data Protection</h2>
+            <p>PDFCropper is designed with privacy-first principles to ensure your documents never leave your device:</p>
+            <ul>
+                <li><strong>Local Processing:</strong> All PDF cropping and editing happens entirely on your device</li>
+                <li><strong>No Cloud Storage:</strong> We never upload, store, or access your documents</li>
+                <li><strong>No Data Collection:</strong> Your files and personal information remain completely private</li>
+                <li><strong>Offline Functionality:</strong> The app works completely offline after installation</li>
+                <li><strong>Automatic Cleanup:</strong> Temporary files are automatically deleted after processing</li>
+            </ul>
+        </div>
+
+        <div class="security-section">
+            <h2><i class="fas fa-mobile-alt"></i>Mobile Security</h2>
+            
+            <h3>iOS Security Features</h3>
+            <ul>
+                <li>App Sandbox isolation prevents access to other apps' data</li>
+                <li>iOS App Store security review and code signing</li>
+                <li>Secure file handling using iOS security frameworks</li>
+                <li>Face ID/Touch ID integration for app access (optional)</li>
+                <li>Encrypted local storage for app preferences</li>
+            </ul>
+
+            <h3>Android Security Features</h3>
+            <ul>
+                <li>Android permission model restricts access to device resources</li>
+                <li>Google Play Protect scanning and verification</li>
+                <li>Scoped storage compliance for enhanced privacy</li>
+                <li>Biometric authentication support</li>
+                <li>Runtime permission requests for transparency</li>
+            </ul>
+        </div>
+
+        <div class="security-section">
+            <h2><i class="fas fa-code"></i>Technical Security</h2>
+            
+            <h3>Application Security</h3>
+            <ul>
+                <li>Regular security audits and penetration testing</li>
+                <li>Secure coding practices and code reviews</li>
+                <li>Memory protection and buffer overflow prevention</li>
+                <li>Input validation and sanitization</li>
+                <li>Error handling that doesn't expose sensitive information</li>
+            </ul>
+
+            <h3>Network Security</h3>
+            <ul>
+                <li>HTTPS encryption for all web communications</li>
+                <li>Certificate pinning for API connections</li>
+                <li>No unnecessary network requests</li>
+                <li>Minimal data transmission (only for app updates and analytics)</li>
+            </ul>
+        </div>
+
+        <div class="security-section">
+            <h2><i class="fas fa-user-shield"></i>User Privacy</h2>
+            <p>We are committed to protecting your privacy:</p>
+            <ul>
+                <li><strong>No Personal Data Collection:</strong> We don't collect names, emails, or personal information</li>
+                <li><strong>Anonymous Usage Analytics:</strong> Only anonymous, aggregated usage statistics (optional)</li>
+                <li><strong>No Tracking:</strong> We don't track your behavior or create user profiles</li>
+                <li><strong>No Third-Party Sharing:</strong> Your data is never shared with third parties</li>
+                <li><strong>GDPR Compliant:</strong> Full compliance with European privacy regulations</li>
+                <li><strong>CCPA Compliant:</strong> Compliance with California privacy laws</li>
+            </ul>
+        </div>
+
+        <div class="alert-box">
+            <h4><i class="fas fa-exclamation-triangle"></i>Important Security Notice</h4>
+            <p>While PDFCropper processes files locally for maximum security, always ensure you're downloading the app from official sources (App Store, Google Play) to avoid malicious versions.</p>
+        </div>
+
+        <div class="security-section">
+            <h2><i class="fas fa-bug"></i>Vulnerability Reporting</h2>
+            <p>We take security vulnerabilities seriously. If you discover a security issue:</p>
+            <ul>
+                <li>Please report it responsibly through our security contact</li>
+                <li>Do not publicly disclose the vulnerability until we've addressed it</li>
+                <li>We'll acknowledge your report within 48 hours</li>
+                <li>We'll provide regular updates on our progress</li>
+                <li>We may offer recognition for valid security reports</li>
+            </ul>
+        </div>
+
+        <div class="security-section">
+            <h2><i class="fas fa-sync-alt"></i>Security Updates</h2>
+            <p>We regularly update PDFCropper to maintain the highest security standards:</p>
+            <ul>
+                <li>Automatic security updates through app stores</li>
+                <li>Regular dependency updates and security patches</li>
+                <li>Proactive security monitoring and threat assessment</li>
+                <li>Compliance with latest platform security requirements</li>
+            </ul>
+        </div>
+
+        <div class="security-section">
+            <h2><i class="fas fa-certificate"></i>Certifications & Compliance</h2>
+            <ul>
+                <li>SOC 2 Type II compliance (in progress)</li>
+                <li>ISO 27001 security management standards</li>
+                <li>OWASP Mobile Security guidelines</li>
+                <li>Platform-specific security certifications (iOS, Android)</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h3><i class="fas fa-shield-alt"></i> Security Concerns?</h3>
+            <p>If you have any security concerns or questions about how we protect your data, please contact our security team.</p>
+            <a href="contact.html">Report Security Issue</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>PDFCropper</h3>
+                    <p>The ultimate PDF editing companion for mobile devices. Crop, save, and manage your PDFs with precision and privacy.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PDFCropper. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="accessibility.html">Accessibility</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

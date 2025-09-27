@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility - PDFCropper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .accessibility-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        .accessibility-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .accessibility-header h1 {
+            font-size: 3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .accessibility-header p {
+            color: #64748b;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .accessibility-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .accessibility-section h2 {
+            color: #2563eb;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .accessibility-section h2 i {
+            margin-right: 0.75rem;
+        }
+        .accessibility-section h3 {
+            color: #1f2937;
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .accessibility-section p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .accessibility-section ul {
+            color: #64748b;
+            line-height: 1.6;
+            padding-left: 1.5rem;
+        }
+        .accessibility-section li {
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .contact-info h3 {
+            margin-bottom: 1rem;
+        }
+        .contact-info p {
+            margin-bottom: 1.5rem;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 25px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .contact-info a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        @media (max-width: 768px) {
+            .accessibility-content {
+                padding: 100px 15px 60px;
+            }
+            .accessibility-header h1 {
+                font-size: 2.5rem;
+            }
+            .accessibility-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h2>PDFCropper</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="nav-link">Terms & Conditions</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="accessibility-content">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="accessibility-header">
+            <h1>Accessibility Statement</h1>
+            <p>PDFCropper is committed to ensuring digital accessibility for people with disabilities.</p>
+        </div>
+
+        <div class="accessibility-section">
+            <h2><i class="fas fa-universal-access"></i>Our Commitment</h2>
+            <p>We are committed to providing a website and mobile application that is accessible to the widest possible audience, regardless of technology or ability. We aim to comply with all applicable standards, including the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.</p>
+        </div>
+
+        <div class="accessibility-section">
+            <h2><i class="fas fa-eye"></i>Accessibility Features</h2>
+            
+            <h3>Visual Accessibility</h3>
+            <ul>
+                <li>High contrast color schemes for better readability</li>
+                <li>Scalable text that can be enlarged up to 200% without loss of functionality</li>
+                <li>Clear visual focus indicators for keyboard navigation</li>
+                <li>Alternative text for all images and icons</li>
+                <li>Consistent navigation and layout across all pages</li>
+            </ul>
+
+            <h3>Motor Accessibility</h3>
+            <ul>
+                <li>Large touch targets (minimum 44px) for easy interaction</li>
+                <li>Keyboard navigation support for all interactive elements</li>
+                <li>No time limits on user interactions</li>
+                <li>Drag and drop alternatives for cropping functionality</li>
+            </ul>
+
+            <h3>Cognitive Accessibility</h3>
+            <ul>
+                <li>Simple, clear language throughout the interface</li>
+                <li>Consistent navigation patterns</li>
+                <li>Error messages that clearly explain what went wrong</li>
+                <li>Step-by-step guidance for complex tasks</li>
+                <li>Undo functionality for all major actions</li>
+            </ul>
+        </div>
+
+        <div class="accessibility-section">
+            <h2><i class="fas fa-mobile-alt"></i>Mobile Accessibility</h2>
+            <p>Our mobile app includes additional accessibility features:</p>
+            <ul>
+                <li>VoiceOver (iOS) and TalkBack (Android) support</li>
+                <li>Voice control compatibility</li>
+                <li>Switch control support</li>
+                <li>Adjustable gesture sensitivity</li>
+                <li>Screen reader optimized interface</li>
+                <li>High contrast mode support</li>
+            </ul>
+        </div>
+
+        <div class="accessibility-section">
+            <h2><i class="fas fa-tools"></i>Assistive Technology Support</h2>
+            <p>PDFCropper is designed to work with a variety of assistive technologies, including:</p>
+            <ul>
+                <li>Screen readers (JAWS, NVDA, VoiceOver, TalkBack)</li>
+                <li>Voice recognition software</li>
+                <li>Keyboard-only navigation</li>
+                <li>Switch devices</li>
+                <li>Magnification software</li>
+            </ul>
+        </div>
+
+        <div class="accessibility-section">
+            <h2><i class="fas fa-cogs"></i>Ongoing Improvements</h2>
+            <p>We continuously work to improve the accessibility of our services:</p>
+            <ul>
+                <li>Regular accessibility audits and testing</li>
+                <li>User feedback integration</li>
+                <li>Staff training on accessibility best practices</li>
+                <li>Collaboration with disability advocacy groups</li>
+                <li>Updates based on evolving accessibility standards</li>
+            </ul>
+        </div>
+
+        <div class="accessibility-section">
+            <h2><i class="fas fa-keyboard"></i>Keyboard Navigation</h2>
+            <p>You can navigate PDFCropper using only your keyboard:</p>
+            <ul>
+                <li><strong>Tab:</strong> Move forward through interactive elements</li>
+                <li><strong>Shift + Tab:</strong> Move backward through interactive elements</li>
+                <li><strong>Enter/Space:</strong> Activate buttons and links</li>
+                <li><strong>Arrow keys:</strong> Navigate within menus and lists</li>
+                <li><strong>Escape:</strong> Close dialogs and menus</li>
+            </ul>
+        </div>
+
+        <div class="accessibility-section">
+            <h2><i class="fas fa-exclamation-triangle"></i>Known Issues</h2>
+            <p>We are aware of the following accessibility issues and are working to resolve them:</p>
+            <ul>
+                <li>Some third-party embedded content may not be fully accessible</li>
+                <li>Complex PDF cropping interactions may require additional assistive technology support</li>
+            </ul>
+            <p>We are actively working on solutions and expect to address these issues in future updates.</p>
+        </div>
+
+        <div class="contact-info">
+            <h3><i class="fas fa-headset"></i> Need Help?</h3>
+            <p>If you encounter any accessibility barriers or need assistance using PDFCropper, please don't hesitate to contact us.</p>
+            <a href="contact.html">Contact Our Support Team</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>PDFCropper</h3>
+                    <p>The ultimate PDF editing companion for mobile devices. Crop, save, and manage your PDFs with precision and privacy.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PDFCropper. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="accessibility.html">Accessibility</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

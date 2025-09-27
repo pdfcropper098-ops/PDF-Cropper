@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="PDFCropper - The easiest way to crop, save and manage your PDF documents">
+    <meta name="theme-color" content="#667eea">
+    <title>PDFCropper - Crop, Save & Manage PDFs with Ease</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <meta http-equiv="Cache-Control" content="max-age=86400">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h2><a href="#home" aria-label="PDFCropper Home">PDFCropper</a></h2>
+                </div>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem" aria-current="page">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#features" class="nav-link" role="menuitem">Features</a></li>
+                    <li role="none"><a href="#pricing" class="nav-link" role="menuitem">Pricing</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Professional PDF Editor</span>
+                    </div>
+                    <h1 class="hero-title">Crop, Save & Manage<br>PDFs with <span class="highlight">Precision</span></h1>
+                    <p class="hero-description">Transform your PDF editing experience with PDFCropper - the simple, fast, and privacy-focused Android app that lets you crop and customize your documents directly on your phone with professional-grade tools.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.8★</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Privacy</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fab fa-google-play"></i>
+                            <span>Download on Play Store</span>
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            <span>Download APK</span>
+                        </a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-tag">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Privacy First</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-bolt"></i>
+                            <span>Lightning Fast</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Optimized</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="app-interface">
+                                    <div class="app-header">
+                                        <div class="app-title">PDFCropper</div>
+                                        <div class="app-menu">⋯</div>
+                                    </div>
+                                    <div class="app-content">
+                                        <div class="pdf-preview">
+                                            <div class="pdf-page">
+                                                <div class="crop-overlay">
+                                                    <div class="crop-handles">
+                                                        <div class="handle top-left"></div>
+                                                        <div class="handle top-right"></div>
+                                                        <div class="handle bottom-left"></div>
+                                                        <div class="handle bottom-right"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="app-tools">
+                                            <div class="tool active">
+                                                <i class="fas fa-crop-alt"></i>
+                                            </div>
+                                            <div class="tool">
+                                                <i class="fas fa-save"></i>
+                                            </div>
+                                            <div class="tool">
+                                                <i class="fas fa-share"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background" aria-hidden="true">
+            <div class="floating-element element-1">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="floating-element element-2">
+                <i class="fas fa-crop"></i>
+            </div>
+            <div class="floating-element element-3">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About PDFCropper</h2>
+                <p>Your ultimate PDF editing companion</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Simple, Fast, and User-Friendly</h3>
+                    <p>
+                        PDFCropper is designed with productivity and document customization in mind. 
+                        Our app allows you to easily crop and edit your PDF files directly from your phone, 
+                        removing unwanted white space and sections with precision.
+                    </p>
+                    <p>
+                        Built for users who value simplicity and efficiency, PDFCropper focuses on delivering 
+                        a seamless experience without compromising on functionality. Whether you're a student, 
+                        professional, or anyone who works with PDFs regularly, our app streamlines your workflow.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Privacy Focused</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-bolt"></i>
+                            <span>Lightning Fast</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-feather-alt"></i>
+                            <span>Lightweight Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="features-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <div class="badge-glow"></div>
+                    <i class="fas fa-magic"></i>
+                    <span>Advanced Features</span>
+                </div>
+                <h2 class="section-title">Professional PDF Tools for <span class="highlight">Perfect Results</span></h2>
+                <p class="section-description">Experience the complete suite of professional-grade PDF editing tools designed specifically for mobile productivity and precision document management</p>
+            </div>
+            
+            <!-- Featured Main Card -->
+            <div class="featured-card">
+                <div class="featured-content">
+                    <div class="featured-icon">
+                        <div class="icon-orbit">
+                            <div class="orbit-ring"></div>
+                            <div class="orbit-ring orbit-ring-2"></div>
+                            <i class="fas fa-crop-alt"></i>
+                        </div>
+                    </div>
+                    <div class="featured-text">
+                        <h3>Advanced Cropping Technology</h3>
+                        <p>Leverage cutting-edge image processing algorithms with intelligent boundary detection and precision adjustment tools for professional-quality document cropping on mobile devices.</p>
+                        <div class="featured-stats">
+                            <div class="stat">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Precision</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2x</span>
+                                <span class="stat-label">Faster</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Secure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-feature="save">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-save"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Efficient</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Flexible Export Options</h3>
+                        <p>Export your documents in multiple formats with customizable quality settings and intelligent compression for optimal file size and clarity.</p>
+                        <div class="feature-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multiple Format Support</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Quality Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="manage">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-folder-open"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Organize</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Document Organization</h3>
+                        <p>Keep your files organized with smart folder structures, custom tagging system, and powerful search functionality for quick document retrieval.</p>
+                        <div class="feature-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom Tagging System</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Advanced Search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="privacy">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Secure</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Privacy & Security</h3>
+                        <p>Your documents stay completely private with local processing technology. No uploads, no cloud storage, and no data sharing - everything happens on your device.</p>
+                        <div class="feature-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Local Processing Only</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>No Data Collection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="speed">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Fast</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Optimized Performance</h3>
+                        <p>Experience fast document processing with efficient algorithms designed for mobile devices, minimal battery usage, and compact app size.</p>
+                        <div class="feature-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fast Processing</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lightweight App</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="share">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-share-alt"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Connect</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Easy Sharing</h3>
+                        <p>Share your processed PDFs effortlessly through email, messaging apps, cloud storage services, or any other app installed on your device.</p>
+                        <div class="feature-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multiple Share Options</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>System Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="ai">
+                    <div class="card-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-brain"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Enhanced</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Smart Enhancement Tools</h3>
+                        <p>Enhance your documents with intelligent image processing features including automatic boundary detection, contrast adjustment, and quality optimization.</p>
+                        <div class="feature-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Boundary Detection</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Quality Enhancement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Links Section -->
+    <section id="links" class="important-links">
+        <div class="container">
+            <div class="section-header">
+                <h2>Important Information</h2>
+                <p>Learn more about our policies and get in touch</p>
+            </div>
+            <div class="links-grid">
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Privacy Policy</h3>
+                    <p>Learn how we protect your data and ensure your privacy while using PDFCropper.</p>
+                    <a href="privacy-policy.html" class="link-btn">Read Privacy Policy</a>
+                </div>
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Terms & Conditions</h3>
+                    <p>Review the terms of service and usage guidelines for PDFCropper.</p>
+                    <a href="terms.html" class="link-btn">Read Terms</a>
+                </div>
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Contact Us</h3>
+                    <p>Have questions or feedback? We'd love to hear from you.</p>
+                    <a href="contact.html" class="link-btn">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>PDFCropper</h3>
+                        <p>The ultimate mobile PDF editing solution. Crop, edit, and manage your documents with precision and privacy.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="updates.html">Updates</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="press-kit.html">Press Kit</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="gdpr.html">GDPR</a></li>
+                        <li><a href="licenses.html">Licenses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p class="newsletter-text">Get the latest updates and features delivered to your inbox.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="btn btn-primary btn-small">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge-link">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 135 40'><rect width='135' height='40' rx='5' fill='%23000'/><text x='67.5' y='15' text-anchor='middle' fill='white' font-size='8'>GET IT ON</text><text x='67.5' y='28' text-anchor='middle' fill='white' font-size='12' font-weight='bold'>Google Play</text></svg>" alt="Get it on Google Play">
+                        </a>
+                        <a href="#" class="app-badge-link">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 135 40'><rect width='135' height='40' rx='5' fill='%23000'/><text x='67.5' y='15' text-anchor='middle' fill='white' font-size='8'>Download on the</text><text x='67.5' y='28' text-anchor='middle' fill='white' font-size='12' font-weight='bold'>App Store</text></svg>" alt="Download on the App Store">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PDFCropper. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="accessibility.html">Accessibility</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PDFCropper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        .about-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .about-header h1 {
+            font-size: 3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .about-header p {
+            color: #64748b;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .about-section {
+            margin-bottom: 3rem;
+        }
+        .about-section h2 {
+            color: #2563eb;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .about-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .about-card i {
+            font-size: 3rem;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        .about-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .about-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        .stat-item {
+            padding: 1rem;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .about-content {
+                padding: 100px 15px 60px;
+            }
+            .about-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h2>PDFCropper</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link active">About</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="nav-link">Terms & Conditions</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-content">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="about-header">
+            <h1>About PDFCropper</h1>
+            <p>We're passionate about making PDF editing simple, powerful, and accessible to everyone on mobile devices.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile-First Design</h3>
+                    <p>Built specifically for mobile devices, ensuring optimal performance and user experience on smartphones and tablets.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Privacy Focused</h3>
+                    <p>All PDF processing happens locally on your device. We never upload, store, or access your documents.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized algorithms ensure quick processing times, even for large PDF documents with multiple pages.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1M+</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50M+</div>
+                    <div class="stat-label">PDFs Processed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.8★</div>
+                    <div class="stat-label">User Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Why Choose PDFCropper?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-crop-alt"></i>
+                    <h3>Precision Cropping</h3>
+                    <p>Advanced cropping tools with pixel-perfect accuracy. Crop exactly what you need with intuitive touch controls.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>AI-Powered</h3>
+                    <p>Smart detection algorithms automatically identify optimal crop areas and enhance document quality.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Easy Sharing</h3>
+                    <p>Share your cropped PDFs instantly via email, cloud storage, or any app on your device.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-card" style="max-width: 600px; margin: 0 auto;">
+                <i class="fas fa-heart"></i>
+                <h3>Built with Love</h3>
+                <p>PDFCropper is developed by a passionate team of mobile app developers who understand the challenges of working with PDFs on mobile devices. We're committed to continuous improvement and user satisfaction.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>PDFCropper</h3>
+                    <p>The ultimate PDF editing companion for mobile devices. Crop, save, and manage your PDFs with precision and privacy.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PDFCropper. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="accessibility.html">Accessibility</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

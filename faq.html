@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - PDFCropper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .faq-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        .faq-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .faq-header h1 {
+            font-size: 3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .faq-header p {
+            color: #64748b;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .faq-question {
+            padding: 1.5rem 2rem;
+            background: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            transition: background-color 0.3s ease;
+        }
+        .faq-question:hover {
+            background: #e2e8f0;
+        }
+        .faq-question.active {
+            background: #2563eb;
+            color: white;
+        }
+        .faq-icon {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 0 2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-answer.active {
+            padding: 1.5rem 2rem;
+            max-height: 500px;
+        }
+        .faq-answer p {
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+        .search-box {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .search-box input:focus {
+            border-color: #2563eb;
+        }
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+        }
+        @media (max-width: 768px) {
+            .faq-content {
+                padding: 100px 15px 60px;
+            }
+            .faq-header h1 {
+                font-size: 2.5rem;
+            }
+            .faq-question {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+            }
+            .faq-answer.active {
+                padding: 1rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h2>PDFCropper</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="nav-link">Terms & Conditions</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="faq-content">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about PDFCropper and how to get the most out of our app.</p>
+        </div>
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="faq-search" placeholder="Search for answers...">
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I crop a PDF on my mobile device?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Simply open PDFCropper, select your PDF file, and use your finger to draw a rectangle around the area you want to keep. The app will automatically crop the selected area and save the result.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is my data safe with PDFCropper?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! All PDF processing happens locally on your device. We never upload, store, or access your documents. Your privacy and data security are our top priorities.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What file formats does PDFCropper support?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>PDFCropper primarily works with PDF files. You can also import images (JPG, PNG) and convert them to PDF before cropping. The output is always in PDF format.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I crop multiple pages at once?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! PDFCropper supports batch processing. You can apply the same crop settings to multiple pages or crop each page individually for maximum flexibility.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is PDFCropper free to use?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>PDFCropper offers both free and premium features. Basic cropping is free with some limitations. Premium features include unlimited crops, batch processing, and advanced editing tools.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I share my cropped PDFs?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>After cropping, tap the share button to send your PDF via email, save to cloud storage (Google Drive, Dropbox), or share with any app installed on your device.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What's the maximum file size I can process?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Free users can process files up to 10MB. Premium users can handle files up to 100MB. For larger files, consider splitting them into smaller documents first.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I undo changes after cropping?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! PDFCropper includes an undo feature that lets you revert changes before saving. Once saved, you can always re-import the original file to start over.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Does PDFCropper work offline?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! Since all processing happens on your device, PDFCropper works completely offline. You only need an internet connection for downloading the app and accessing premium features.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I contact support?
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>You can reach our support team through the Contact page, email us directly, or use the in-app help feature. We typically respond within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>PDFCropper</h3>
+                    <p>The ultimate PDF editing companion for mobile devices. Crop, save, and manage your PDFs with precision and privacy.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PDFCropper. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="accessibility.html">Accessibility</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            const searchInput = document.getElementById('faq-search');
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            // Toggle FAQ answers
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isActive = this.classList.contains('active');
+
+                    // Close all other FAQs
+                    faqQuestions.forEach(q => {
+                        q.classList.remove('active');
+                        q.nextElementSibling.classList.remove('active');
+                    });
+
+                    // Toggle current FAQ
+                    if (!isActive) {
+                        this.classList.add('active');
+                        answer.classList.add('active');
+                    }
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

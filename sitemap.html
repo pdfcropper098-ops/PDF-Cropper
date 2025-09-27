@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - PDFCropper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sitemap-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        .sitemap-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .sitemap-header h1 {
+            font-size: 3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .sitemap-header p {
+            color: #64748b;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .sitemap-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .sitemap-section h3 {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .sitemap-section h3 i {
+            margin-right: 0.5rem;
+        }
+        .sitemap-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sitemap-links li {
+            margin-bottom: 0.75rem;
+        }
+        .sitemap-links a {
+            color: #64748b;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+        .sitemap-links a:hover {
+            color: #2563eb;
+        }
+        .sitemap-links a i {
+            margin-right: 0.5rem;
+            width: 16px;
+            text-align: center;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+        .last-updated {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .sitemap-content {
+                padding: 100px 15px 60px;
+            }
+            .sitemap-header h1 {
+                font-size: 2.5rem;
+            }
+            .sitemap-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h2>PDFCropper</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="nav-link">Terms & Conditions</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sitemap-content">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="sitemap-header">
+            <h1>Sitemap</h1>
+            <p>Navigate through all pages and sections of the PDFCropper website.</p>
+        </div>
+
+        <div class="sitemap-grid">
+            <div class="sitemap-section">
+                <h3><i class="fas fa-home"></i>Main Pages</h3>
+                <ul class="sitemap-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i>About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+                    <li><a href="faq.html"><i class="fas fa-question-circle"></i>FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="sitemap-section">
+                <h3><i class="fas fa-cog"></i>Features</h3>
+                <ul class="sitemap-links">
+                    <li><a href="index.html#features"><i class="fas fa-crop-alt"></i>PDF Cropping</a></li>
+                    <li><a href="index.html#features"><i class="fas fa-mobile-alt"></i>Mobile Optimized</a></li>
+                    <li><a href="index.html#features"><i class="fas fa-shield-alt"></i>Privacy Focused</a></li>
+                    <li><a href="index.html#features"><i class="fas fa-bolt"></i>Fast Processing</a></li>
+                </ul>
+            </div>
+
+            <div class="sitemap-section">
+                <h3><i class="fas fa-gavel"></i>Legal</h3>
+                <ul class="sitemap-links">
+                    <li><a href="privacy-policy.html"><i class="fas fa-user-shield"></i>Privacy Policy</a></li>
+                    <li><a href="terms.html"><i class="fas fa-file-contract"></i>Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="sitemap-section">
+                <h3><i class="fas fa-life-ring"></i>Support</h3>
+                <ul class="sitemap-links">
+                    <li><a href="contact.html"><i class="fas fa-headset"></i>Customer Support</a></li>
+                    <li><a href="faq.html"><i class="fas fa-question"></i>Help Center</a></li>
+                    <li><a href="accessibility.html"><i class="fas fa-universal-access"></i>Accessibility</a></li>
+                    <li><a href="security.html"><i class="fas fa-lock"></i>Security</a></li>
+                </ul>
+            </div>
+
+            <div class="sitemap-section">
+                <h3><i class="fas fa-link"></i>Quick Links</h3>
+                <ul class="sitemap-links">
+                    <li><a href="index.html#hero"><i class="fas fa-rocket"></i>Get Started</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-users"></i>Why Choose Us</a></li>
+                    <li><a href="index.html#links"><i class="fas fa-external-link-alt"></i>Important Links</a></li>
+                    <li><a href="index.html#testimonials"><i class="fas fa-star"></i>Testimonials</a></li>
+                </ul>
+            </div>
+
+            <div class="sitemap-section">
+                <h3><i class="fas fa-share-alt"></i>Social Media</h3>
+                <ul class="sitemap-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i>YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            <i class="fas fa-clock"></i>
+            Last updated: December 2024
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>PDFCropper</h3>
+                    <p>The ultimate PDF editing companion for mobile devices. Crop, save, and manage your PDFs with precision and privacy.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PDFCropper. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="accessibility.html">Accessibility</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
